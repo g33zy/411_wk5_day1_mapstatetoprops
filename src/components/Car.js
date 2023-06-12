@@ -13,7 +13,7 @@ const Car = (props) => {
                 <h2>{car.Name}</h2>
                 {
                     Object.keys(car).map((key, idx) => {
-                        return <Chip label={`${key}: ${car[key]}`}></Chip>
+                        return <span key={idx}><Chip label={`${key}: ${car[key]}`} ></Chip></span>
                     })
                 }
             </Paper>
